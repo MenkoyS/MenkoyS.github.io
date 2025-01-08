@@ -1,42 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Développeur Freelance à Lille, je crée des sites web performants et optimisés pour votre activité.">
-    <meta name="keywords" content="Développeur Freelance Lille, Création site web Lille, Yann Hobbe">
+    <meta name="keywords" content="Développeur Freelance Lille, Création site web Lille, Yann Hobbe, optimisation SEO Lille, sites performants, solutions web Lille">
     <meta name="author" content="Hobbe Yann">
     <title>Développeur Freelance Lille - Yann Hobbe</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header style="background: linear-gradient(135deg, #6a11cb, #2575fc); color: white; text-align: center; padding: 2rem;">
         <h1>Hobbe Yann - Développeur Freelance à Lille</h1>
         <p>Des solutions web adaptées à vos besoins.</p>
         <nav>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul style="list-style: none; display: flex; justify-content: center; gap: 1.5rem;">
+                <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
+                <li><a href="#portfolio" style="color: white; text-decoration: none;">Portfolio</a></li>
+                <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="services">
-            <h2>Mes Services</h2>
-            <p>Je propose des services de création de sites web, optimisation SEO et maintenance technique.</p>
+        <section id="services" style="padding: 2rem; background: #f7f9fc;">
+            <h2 style="color: #2575fc;">Mes Services</h2>
+            <p>Je propose des services de création de sites web modernes et d'applications</p>
+            <ul>
+                <li>Création de sites vitrines et e-commerce.</li>
+                <li>Applications comme un bloc-note ou bien une calculatrice et d'autres.</li>
+                <li>Audit SEO et stratégies d'amélioration.</li>
+            </ul>
+                </section>
+        <section id="portfolio" style="padding: 2rem;">
+            <h2 style="color: #2575fc;">Portfolio</h2>
+            <p>Découvrez mes réalisations : des sites web et applications performants, modernes, et adaptés à vos besoins.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                <img src="calc.png" alt="Projet 1 étant une calculatrice " style="width: 300px; height: 300px; object-fit: cover;">
+                <img src="blox-note.png" alt="Projet 2 étant un bloc note" style="width: 300px; height: 300px; object-fit: cover;">
+                <img src="widop.png" alt="Projet 3 étant un site web fais pour une entreprise" style="width: 300px; height: 300px; object-fit: cover;">
+            </div>
         </section>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Découvrez mes réalisations : des sites performants et modernes.</p>
+        <section id="about" style="padding: 2rem; background: #f7f9fc;">
+            <h2 style="color: #2575fc;">À propos</h2>
+            <p>Passionné par le développement web depuis mes 15 ans, je travaille en freelance pour aider les entreprises à Lille et ailleurs à atteindre leurs objectifs numériques. Que vous soyez une petite entreprise ou une grande organisation, je mets à votre disposition mes compétences en HTML, CSS, JavaScript, et plus encore pour vous offrir des solutions sur mesure.</p>
         </section>
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <p>Envoyez-moi un message à travers le formulaire ou visitez mon site : <a href="https://yann-hobbe.me/" target="_blank">yann-hobbe.me</a>.</p>
+        <section id="contact" style="padding: 2rem;">
+            <h2 style="color: #2575fc;">Contactez-moi</h2>
+            <p>Envoyez-moi un message via le formulaire ci-dessous ou visitez mon site : <a href="https://yann-hobbe.me/" target="_blank">yann-hobbe.me</a>.</p>
+            <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 1rem; max-width: 600px; margin: 0 auto;">
+                <label for="name" style="font-weight: bold;">Nom :</label>
+                <input type="text" id="name" name="name" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                
+                <label for="email" style="font-weight: bold;">Email :</label>
+                <input type="email" id="email" name="email" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+                
+                <label for="message" style="font-weight: bold;">Message :</label>
+                <textarea id="message" name="message" required style="padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px; height: 150px;"></textarea>
+                
+                <button type="submit" style="padding: 0.75rem; background-color: #2575fc; color: white; border: none; border-radius: 4px; cursor: pointer;">Envoyer</button>
+            </form>
         </section>
     </main>
-    <footer>
+    <footer style="background: #6a11cb; color: white; text-align: center; padding: 1rem;">
         <p>© 2025 Hobbe Yann. Tous droits réservés.</p>
     </footer>
 </body>
